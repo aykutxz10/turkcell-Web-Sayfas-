@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turkcell Para Yükle</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f6fe0e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: #0022ff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      max-width: 90%;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #000000;
+      border-radius: 5px;
+    }
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #000000;
+      border-radius: 5px;
+    }   
+    .form-group button {
+      padding: 12px 20px;
+      font-size: 16px;
+      background-color: #ffffff; /* Turkcell kırmızı renk */
+      color: #fff9f9;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .turkcell-logo {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .turkcell-logo img {
+      height: 70px; /* Logo yüksekliği */
+      margin-right: auto;
+    }
+    .turkcell-logo span {
+      font-size: 24px;
+      font-weight: bold;
+      color: #e5e5e5; /* Turkcell kırmızı renk */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="turkcell-logo">
+      <img src="turkcell-logo.webp" alt="Turkcell Logo">
+      <span>PARA YÜKLE</span>
+    </div>
+    <form id="paymentForm">
+      <div class="form-group">
+        <label for="name">İsim</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Telefon Numarası</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+      </div>
+      <div class="form-group">
+        <label for="amount">Yüklenecek Tutar (TL)</label>
+        <input type="number" id="amount" name="amount" min="1" required>
+      </div>
+      <div class="form-group">
+        <label for="cardNumber">Kart Numarası</label>
+        <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9101 1121" required>
+      </div>
+      <div class="form-group">
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" maxlength="3" pattern="[0-9]{3}" required>
+      </div>
+      <div class="form-group">
+        <label for="expiry">Son Kullanma Tarihi</label>
+        <input type="text" id="expiry" name="expiry" placeholder="AA/YY" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" required>
+      </div>
+      <button type="submit" style="background-color: #f4f4f4; padding: 20px 180px; font-size: 20px; border-radius: 10px;">Para Yükle</button>
+    </form>
+  </div>
+
+  <script>
+    // Form submit işlemleri
+    document.getElementById("paymentForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Formun normal submit işlemini engeller
+
+      // Formdan bilgileri toplama
+      var formData = new FormData(this);
+      var data = {};
+      for (var pair of formData.entries()) {
+        data[pair[0]] = pair[1];
+      }
+
+      // Örnek olarak konsola yazdırma
+      console.log("Gönderilen Veri:", data);
+
+      // Burada gerçek bir işlem yapılacaktı, ama simülasyon olduğu için sadece konsola yazdırıyoruz
+      alert("Ödeme işlemi simüle edildi. Bilgiler konsola yazdırıldı.");
+
+      // Formu sıfırla
+      this.reset();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+/* Butonlar için genel stil */
+.button {
+  background-color: #007bff; /* Mavi renk */
+  color: rgb(255, 255, 255); /* Beyaz renk */
+  padding: 10px 20px; /* Padding ayarları */
+  border: none; /* Kenarlık yok */
+  border-radius: 5px; /* Köşe yuvarlaklığı */
+  cursor: pointer; /* İmleç tipi */
+  text-decoration: none; /* Metin alt çizgisi yok */
+  font-size: 16px; /* Yazı tipi boyutu */
+}
+
+/* Buton hover durumu */
+.button:hover {
+  opacity: 0.8; /* Opaklık azaltma */
+}
+
+/* Sayfalama noktaları */
+.pagination .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #8a8989;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Aktif sayfalama noktası */
+.pagination .dot.active {
+  background-color: #050dfa;
+}
+
+/* Özel teklif alanı stil */
+.offer {
+  background-color: #ffbb33;
+  color: rgb(8, 0, 255);
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.offer .button {
+  background-color: white;
+  color: #ffbb33;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.offer .button:hover {
+  background-color: #f0f0f0;
+}

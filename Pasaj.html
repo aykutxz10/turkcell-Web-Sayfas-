@@ -1,0 +1,283 @@
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turkcell.com.tr</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    header {
+      background-color: #fff;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 400px;
+    }
+    .logo span {
+      font-size: 90px;
+      font-weight: bold;
+      margin-left: 20px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav li {
+      margin-right: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+     
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      
+    }
+    .search-bar input {
+      padding: 70px 950px;
+      border: 10px solid #ccc;
+      border-radius: 50px;
+      font-size: px;
+    }
+    .search-bar button {
+      padding: 15px 15px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      
+    }
+    .user-actions {
+      display: flex;
+      align-items: center;
+      
+    }
+    .user-actions button {
+      padding: 30px 50px;
+      border: none;
+      background-color: #f2ff00;
+      color: #000000;
+      border-radius: 5px;
+      margin-left: 10px;
+      cursor: pointer;
+      font-size: 80px;
+    }
+    .user-actions .cart {
+      position: relative;
+    }
+    .user-actions .cart .cart-count {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      background-color: #ff5722;
+      color: #fff;
+      font-size: 12px;
+      padding: 2px 5px;
+      border-radius: 50%;
+    }
+    .categories {
+      background-color: #f0f0f0;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-around;
+    }
+    .category {
+      background-color: #fff;
+      padding: 60px 90px;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      font-size: 50px;
+    }
+    .hero {
+      background-image: url('https://www.turkcell.com.tr/media/wysiwyg/images/galaxyunpacked-hero-banner-tr.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .hero .content {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 80px;
+      border-radius: 5px;
+      text-align: center;
+      color: #c5c5c5;
+    }
+    .hero .content h1 {
+      font-size: 90px;
+      margin-bottom: 10px;
+    }
+    .hero .content p {
+      font-size: 80px;
+      margin-bottom: 20px;
+    }
+    .hero button {
+      padding: 80px 70px;
+      border: none;
+      background-color: #fff;
+      color: #333;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    /* Yeni bölüm stilleri */
+    .announcement-section {
+      padding: 5px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    .announcement-section h2 {
+      font-size: 100px;
+      margin-bottom: 5px;
+    }
+    .announcement-section p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .listing {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+    .listing-card {
+      width: calc(33.33% - 20px);
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+    .listing-card img {
+      width: 100%;
+      height: 1300px;
+      object-fit: cover;
+      border-bottom: 1px solid #ffffff;
+    }
+    .listing-card .details {
+      padding: 15px;
+    }
+    .listing-card h3 {
+      font-size: 80px;
+      margin-bottom: 10px;
+    }
+    .listing-card p {
+      font-size: 60px;
+      color: #666;
+      margin-bottom: 15px;
+    }
+    .listing-card .price {
+      font-size: 60px;
+      font-weight: bold;
+      color: #333;
+     
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="pasaj.png" alt="Pasaj Logo">
+      <span>TURKCELL PASAJ</span>
+    </div>
+    <div class="user-actions">
+      <div class="search-bar">
+        <input type="text" placeholder="Ürün, marka veya kategori ara">
+        <button>Giriş Yap</button>
+      </div>
+      <div class="cart">
+        <button>Sepet</button>
+        <span class="cart-count">0</span>
+      </div>
+    </div>
+  </header>
+  <div class="categories">
+    <div class="category">Cep Telefonu-Aksesuar</div>
+    <div class="category">Bilgisayar-Tablet</div>
+    <div class="category">Elektrikli Ev Aletleri</div>
+    <div class="category">Beyaz Eşya</div>
+    <div class="category">Sağlık-Kişisel Bakım</div>
+    <div class="category">Hobi-Oyun</div>
+    <div class="category">TV-Ses Sistemleri</div>
+    <div class="category">Ev-Yaşam</div>
+    <div class="category">Anne-Bebek-Oyuncak</div>
+  </div>
+  <!-- Yeni bölüm: Satılık Eşya - Ev Aletleri -->
+  <div class="announcement-section">
+    <h2>Telefonlar</h2>
+    <div class="listing">
+      <!-- Telefon Listesi 1 -->
+      <div class="listing-card">
+        <img src="shap.jpeg" alt="Telefon 1">
+        <div class="details">
+          <h3>Apple 13 (128gb)</h3>
+          <p>Renk: Siyah, Ekran: 6.5 inç, Kamera: 48 MP</p>
+          <p class="price">Fiyat: 35000 TL</p>
+        </div>
+      </div>
+      <!-- Telefon Listesi 2 -->
+      <div class="listing-card">
+        <img src="byap.jpeg" alt="Telefon 2">
+        <div class="details">
+          <h3>Apple 11 (64gb)</h3>
+          <p>Renk: Beyaz, Ekran: 6.5 inç, Kamera: 64 MP</p>
+          <p class="price">Fiyat: 28000 TL</p>
+        </div>
+      </div>
+      <!-- Telefon Listesi 3 -->
+      <div class="listing-card">
+        <img src="kırap.jpeg" alt="Telefon 3">
+        <div class="details">
+          <h3>Apple 13 (128gb)</h3>
+          <p>Renk: Kırmızı, Ekran: 6.5 inç, Kamera: 32 MP</p>
+          <p class="price">Fiyat: 29000 TL</p>
+        </div>
+      </div>
+      <!-- Telefon Listesi 4 -->
+      <div class="listing-card">
+        <img src="yeşilap.jpeg" alt="Telefon 4">
+        <div class="details">
+          <h3>Apple 13 (64gb)</h3>
+          <p>Renk: Yeşil, Ekran: 6.5 inç, Kamera: 128 MP</p>
+          <p class="price">Fiyat: 35000 TL</p>
+        </div>
+      </div>
+      <!-- Telefon Listesi 5 -->
+      <div class="listing-card">
+        <img src="goldap.jpeg" alt="Telefon 5">
+        <div class="details">
+          <h3>Apple 13 PRO (256gb)</h3>
+          <p>Renk: Gold, Ekran: 6.5 inç, Kamera: 48 MP</p>
+          <p class="price">Fiyat: 32000 TL</p>
+        </div>
+      </div>
+      <!-- Telefon Listesi 6 -->
+      <div class="listing-card">
+        <img src="maviap.jpeg" alt="Telefon 6">
+        <div class="details">
+          <h3>Apple 11 (64gb)</h3>
+          <p>Renk: Mavi, Ekran: 6.5 inç, Kamera: 128 MP</p>
+          <p class="price">Fiyat: 35000 TL</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+</h3> <p>Renk: Mavi, Ekran: 6.5 inç, Kamera: 128 MP</p> <p class="price">Fiyat: 35000 TL</p> </div> </div> </div> </body> </html>

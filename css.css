@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .header {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    margin-right: 20px;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .actions a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .actions .cart {
+    position: relative;
+  }
+  
+  .actions .cart span {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ffbb33;
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 50%;
+  }
+  
+  .main {
+    padding: 20px;
+  }
+  
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf1d7bac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80');
+    background-size: cover;
+  }
+  
+  .banner h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 36px;
+  }
+  
+  .banner .button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffbb33;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .pagination .dot.active {
+    background-color: #ffbb33;
+  }
+  
+  .offer {
+    background-color: #ffbb33;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .offer .button {
+    background-color: white;
+    color: #ffbb33;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
